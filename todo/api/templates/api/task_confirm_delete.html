@@ -1,0 +1,10 @@
+
+<a href="{% url 'tasks'%}">GO BACK</a>
+<form method="post" action="">
+{% csrf_token%}
+
+                                                                   <!-- here when simply task is called dunder method gets called. -->
+<p>Are you sure you want to delete this task? "{{task}}"</p>
+<input type="submit" value="submit" >
+
+</form>
